@@ -2,5 +2,6 @@
   {
     id: "garbanzo"
     name: "Garbanzo"
+    // optional: icon: "garbanzo"  // item uses sprites/garbanzo.png automatically by id
   }
 ]

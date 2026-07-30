@@ -1,2 +1,12 @@
 [
+  {
+    id: "garbanzo_farm"
+    name: "Garbanzo Farm"
+    size: 1
+    health: 120
+    requirements: [
+      [copper, 25]
+    ]
+    category: "production"
+  }
 ]
