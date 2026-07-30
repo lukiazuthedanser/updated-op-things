@@ -1,0 +1,10 @@
+[
+  {
+    id: "liquid-epidonite"
+    name: "Epidonite"
+    color: "#AA00AA"
+    temperature: 0.2
+    viscosity: 0.3
+    flammability: 0.0
+  }
+]

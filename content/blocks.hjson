@@ -8,5 +8,35 @@
       [copper, 25]
     ]
     category: "production"
+  },
+  {
+    id: "ore-epidonite1"
+    name: "Epidonite Ore 1"
+    type: "ore"
+    ore: "raw-epidonite"
+    hardness: 2
+    itemDrop: "raw-epidonite"
+    spawnColor: "#AA00AA"
+    mapColor: "#A040A0"
+  },
+  {
+    id: "ore-epidonite2"
+    name: "Epidonite Ore 2"
+    type: "ore"
+    ore: "raw-epidonite"
+    hardness: 3
+    itemDrop: "raw-epidonite"
+    spawnColor: "#BB33BB"
+    mapColor: "#B050B0"
+  },
+  {
+    id: "ore-epidonite3"
+    name: "Epidonite Ore 3"
+    type: "ore"
+    ore: "raw-epidonite"
+    hardness: 4
+    itemDrop: "raw-epidonite"
+    spawnColor: "#CC66CC"
+    mapColor: "#C060C0"
   }
 ]

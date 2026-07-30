@@ -2,6 +2,15 @@
   {
     id: "garbanzo"
     name: "Garbanzo"
-    // optional: icon: "garbanzo"  // item uses sprites/garbanzo.png automatically by id
+  },
+  {
+    id: "raw-epidonite"
+    name: "Raw Epidonite"
+    stackSize: 100
+  },
+  {
+    id: "epidonite"
+    name: "Epidonite"
+    stackSize: 100
   }
 ]
