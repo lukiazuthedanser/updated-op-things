@@ -2,33 +2,32 @@ Garbanzo Mindustry mod (content-pack)
 
 What I added
 
-- mod.hjson — the mod manifest (content-pack, no Java main)
-- content/items.hjson — a single example item (id: garbanzo)
-- content/blocks.hjson — empty array (placeholder for your blocks)
-- content/units.hjson — empty array (placeholder for your units)
+- mod.hjson — the mod manifest (content-pack, no Java main). Declares a dependency on OP-Mod.
+- content/items.hjson — example items (garbanzo, raw-epidonite, epidonite)
+- content/blocks.hjson — example blocks (garbanzo_farm, ore-epidonite1..3)
+- content/units.hjson — empty placeholder
+- content/liquids.hjson — liquid-epidonite
+- sprites/ (placeholder + your provided sprites)
 
-How to install locally
+Dependency note
 
-1. Zip the repository contents so that mod.hjson sits at the top level in the zip (or copy the entire repo directory).
-2. Put the zip (or folder) into your Mindustry/mods/ directory.
-3. Start Mindustry and enable the "Garbanzo" mod in the Mods menu.
+This mod declares a dependency on "OP-Mod" (case-sensitive). You must install the OP-Mod mod (for example: https://github.com/Delourians/OP-mod) alongside this mod for everything to work, since some research/ids reference content provided by OP-Mod.
 
-How to expand the mod
+How to install locally on Android
 
-- Add sprites/images in a `sprites/` directory and reference them in your content files using the matching filename (without extension).
-- Edit content/*.hjson to add items, blocks, units, and other content. Mindustry uses HJSON for content files — they are human-friendly JSON. Keep the files as arrays of objects.
-- If you need custom logic (new behaviors, UI, or hooks) you'll need to switch to a Java/Kotlin mod with a `main` entry in mod.hjson and a compiled jar.
+1. I can publish a ready-to-download ZIP with mod.hjson at the archive root so Mindustry accepts it.
+2. Download the ZIP on your Android device.
+3. Move the ZIP to /sdcard/Android/data/io.anuke.mindustry/files/mods/ or open Mindustry → Mods → Import and select the ZIP.
+4. In Mindustry → Mods, enable both "OP-Mod" and "Garbanzo" (order doesn't strictly matter), and then start a game.
 
 Notes
 
-- This is a minimal content-pack scaffold so you can start adding content assets and HJSON definitions. If you want, I can:
-  - add example blocks/units with valid properties,
-  - create a sprites placeholder and a sample icon,
-  - or convert this to a Java/Kotlin mod skeleton with Gradle and a main class.
+- If OP-Mod has the mod id spelled differently, adjust mod.hjson `dependencies` accordingly. I tried to find the upstream repo and a likely match is https://github.com/Delourians/OP-mod — if that is the one you meant, the id may be "OP-Mod" (case-sensitive) as you said. If you want me to verify the exact id inside that repo's mod.hjson, reply “confirm id” and I will fetch it and update.
+- If you prefer the mod to be standalone (no external dependency), I can duplicate the OP-Mod assets (ruby, rl-turret tech, surge-alloy, etc.) in this mod, but that may cause conflicts if OP-Mod is also installed.
 
-Next steps I can take now
+Next steps I can take
 
-- Populate the content files with concrete example blocks/units (I can add a simple block and unit that work on recent Mindustry versions).
-- Create a sample sprite and include it.
-- Convert this scaffold into a Java/Kotlin mod if you prefer custom code.
+- Publish a ZIP you can download on Android now (reply “publish”).
+- Verify OP-Mod's exact mod id in the upstream repo and update `dependencies` if needed (reply “confirm id”).
+- Make the mod standalone by adding stubs for missing OP-Mod content (reply “stub it”).
 
